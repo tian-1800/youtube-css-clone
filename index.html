@@ -5,12 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bach Passacaglia BWV 582 Groningen Martinikerk - Youtube</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="normalize.css" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header></header>
-    <main>
+    <main id="main">
       <div id="video-and-comment">
         <section id="video">
           <div id="video-container">
@@ -21,27 +29,100 @@
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowfullscreen
             ></iframe>
-            <p id="video-title">
-              Bach Passacaglia BWV 582 Groningen Martinikerk
-            </p>
-            <p>6,779 views Jan 4, 2016</p>
-            <div id="like-dislike"></div>
+            <div id="video-subtitle">
+              <div id="like-dislike">
+                <span class="material-icons"> thumb_up </span>
+                <span class="like-dislike-text">86</span>
+                <span class="material-icons"> thumb_down </span>
+                <span class="like-dislike-text">4</span>
+                <i class="material-icons reply">reply</i>
+                <span class="like-dislike-text">SHARE</span>
+                <i class="material-icons">playlist_add</i>
+                <span class="like-dislike-text">SAVE</span>
+                <i class="material-icons more">more_horiz</i>
+              </div>
+              <p id="video-title">
+                Bach Passacaglia BWV 582 Groningen Martinikerk
+              </p>
+              <p id="video-views">
+                6,779 views <span class="middot">&middot;</span> Jan 4, 2016
+              </p>
+            </div>
           </div>
           <div id="uploader">
-            <p>Jochem Schuurman</p>
-            <p>334 subscribers</p>
-            <p>
-              Johann Sebastian Bach (1685-1750)<br />Passacaglia en Fuga in c
-              BWV 582<br />Martinikerk Groningen
-            </p>
-            <p>SHOW MORE</p>
+            <img
+              id="uploader-img"
+              src="https://yt3.ggpht.com/ytc/AKedOLTxOgmHOmT5L0Kkk945aSTmiMGOf7SSNugSbL273Q=s48-c-k-c0x00ffffff-no-rj"
+              alt=""
+              srcset=""
+            />
+            <button id="subscribe-button">SUBSCRIBE</button>
+            <div id="uploader-section">
+              <p>
+                <span id="uploader-person">Jochem Schuurman</span><br /><span
+                  id="uploader-subscriber"
+                  >334 subscribers</span
+                >
+              </p>
+              <p id="video-description">
+                Johann Sebastian Bach (1685-1750)<br />Passacaglia en Fuga in c
+                BWV 582<br />Martinikerk Groningen
+              </p>
+              <p id="show-more">SHOW MORE</p>
+            </div>
           </div>
         </section>
         <section id="comment">
           <header id="comment-header"></header>
-          <main id="comment-body">
+          <div id="comment-main">
             <div class="comment-container">
-              <p class="comment-person">Teun van de Steeg<span class="comment-age"></span></p>
+              <div>
+                <img
+                  class="comment-img"
+                  src="https://yt3.ggpht.com/yti/APfAmoFj4PAuLvpZ0BFCGIu8zPhwbOQvDPXXVv8xEQ=s48-c-k-c0x00ffffff-no-rj"
+                  alt=""
+                  srcset=""
+                />
+              </div>
+              <div class="comment-body">
+                <input
+                  id="public-input"
+                  type="text"
+                  placeholder="Add a public comment"
+                />
+              </div>
+            </div>
+            <div class="comment-container">
+              <div>
+                <img
+                  class="comment-img"
+                  src="https://yt3.ggpht.com/ytc/AKedOLRV-hop_FMso_Lq9fBPDNT3yk0G_salZabWCF_62w=s48-c-k-c0x00ffffff-no-rj"
+                  alt=""
+                  srcset=""
+                />
+              </div>
+              <div class="comment-body">
+                <p>
+                  <span class="comment-person">Omega</span>
+                  <span class="comment-age">3 months ago</span>
+                </p>
+                <p class="comment-text">
+                  A wonderful, emotional, exquisite performance on an equally
+                  amazing organ!
+                  <br />Must be my favourite!
+                </p>
+                <div class="comment-thumb-container">
+                  <span class="material-icons"> thumb_up </span>
+                  <span class="material-icons"> thumb_down </span>
+                  <span class="comment-reply">REPLY</span>
+                </div>
+                <div class="comment-likes"></div>
+              </div>
+            </div>
+            <div class="comment-container">
+              <p class="comment-person">
+                Teun van de Steeg<span class="comment-age"></span>
+              </p>
               <p class="comment-text">
                 Mooi en degelijk gespeeld alleen de overgang naar de fuga komt
                 op mij vreemd over. De schrijfwijze hoeft vaak niet samen te
@@ -59,12 +140,58 @@
               <p class="comment-text"></p>
               <div class="comment-likes"></div>
             </div>
-          </main>
+          </div>
         </section>
       </div>
       <div id="recommendation">
-        <a href="https://i.ytimg.com/vi/N0BoLA8SDYo/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLAbP_3cfkhoW0xuplRcq0zp2yHLsA" class="recommendation-container">
-
+        <a
+          href="https://www.youtube.com/watch?v=N0BoLA8SDYo"
+          class="recommendation-container"
+        >
+          <img
+            src="https://i.ytimg.com/vi/N0BoLA8SDYo/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLAbP_3cfkhoW0xuplRcq0zp2yHLsA"
+            alt=""
+          />
+          <div>
+            <p class="rec-video-title">
+              J.S. Bach - Passacaglia und Fuge in C minor, BWV 582..
+            </p>
+            <p class="rec-video-uploader">
+              Hedon Zwolle<br />14K views 4 years ago
+            </p>
+          </div>
+        </a>
+        <a
+          href="https://www.youtube.com/watch?v=clK7RIpFbXQ"
+          class="recommendation-container"
+        >
+          <img
+            src="https://i.ytimg.com/vi/clK7RIpFbXQ/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLDKGDahXTNqQPQJ2MvEpjQ79Fw6xQ"
+            alt=""
+          />
+          <div>
+            <p class="rec-video-title">
+              Sietze de Vries Improvisatie Ps 33 Martinikerk Groningen
+            </p>
+            <p class="rec-video-uploader">
+              henk van den brink<br />4.9K views 2 years ago
+            </p>
+          </div>
+        </a>
+        <a
+          href="https://www.youtube.com/watch?v=tRR9yYrX_ds"
+          class="recommendation-container"
+        >
+          <img
+            src="https://i.ytimg.com/vi/tRR9yYrX_ds/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLAwUKUliVsjBPhATIRB8yB_5R2V-A"
+            alt=""
+          />
+          <div>
+            <p class="rec-video-title">The Pianist - Full OST soundtrack</p>
+            <p class="rec-video-uploader">
+              ROMANTIC HINDI<br />199K views 3 years ago
+            </p>
+          </div>
         </a>
       </div>
     </main>
