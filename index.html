@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bach Passacaglia BWV 582 Groningen Martinikerk - Youtube</title>
+    <link rel="icon" href="yt-icon-only.svg" type="image/icon type">
+    <title>Passacaglia BWV 582 Groningen Martinikerk - Youtube</title>
     <link
       href="https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap"
       rel="stylesheet"
@@ -17,7 +18,23 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header></header>
+    <header id="yt-header">
+      <nav id="left-nav">
+        <i class="material-icons menu">menu</i>
+        <img id="yt-icon" src="yt-icon.svg" alt="" />
+        <form id="search-box">
+          <input type="text" placeholder="Search" />
+          <button id="search-button" class="material-icons">search</button>
+          <i class="material-icons">mic</i>
+        </form>
+      </nav>
+      <nav id="right-nav">
+        <i class="material-icons">video_call</i>
+        <i class="material-icons">apps</i>
+        <i class="material-icons">notifications</i>
+        <i class="material-icons account">account_circle</i>
+      </nav>
+    </header>
     <main id="main">
       <div id="video-and-comment">
         <section id="video">
@@ -75,6 +92,11 @@
         <section id="comment">
           <header id="comment-header"></header>
           <div id="comment-main">
+            <div id="comment-header">
+              <span>14 Comments</span>
+              <i class="material-icons">sort</i>
+              <span>SORT BY</span>
+            </div>
             <div class="comment-container">
               <div>
                 <img
@@ -102,15 +124,15 @@
                 />
               </div>
               <div class="comment-body">
-                <p>
+                <div>
                   <span class="comment-person">Omega</span>
                   <span class="comment-age">3 months ago</span>
-                </p>
-                <p class="comment-text">
+                </div>
+                <div class="comment-text">
                   A wonderful, emotional, exquisite performance on an equally
                   amazing organ!
                   <br />Must be my favourite!
-                </p>
+                </div>
                 <div class="comment-thumb-container">
                   <span class="material-icons"> thumb_up </span>
                   <span class="material-icons"> thumb_down </span>
@@ -120,30 +142,67 @@
               </div>
             </div>
             <div class="comment-container">
-              <p class="comment-person">
-                Teun van de Steeg<span class="comment-age"></span>
-              </p>
-              <p class="comment-text">
-                Mooi en degelijk gespeeld alleen de overgang naar de fuga komt
-                op mij vreemd over. De schrijfwijze hoeft vaak niet samen te
-                vallen met de uitvoering. Schitterend orgel.
-              </p>
-              <div class="comment-likes"></div>
+              <div>
+                <img
+                  class="comment-img"
+                  src="https://yt3.ggpht.com/ytc/AKedOLRU8ae-1C_x6VWCHKTyaDOEv9Hc5UHanFcBGg=s48-c-k-c0x00ffffff-no-rj"
+                  alt=""
+                  srcset=""
+                />
+              </div>
+              <div class="comment-body">
+                <div>
+                  <span class="comment-person">the sceptic</span>
+                  <span class="comment-age">7 months ago</span>
+                </div>
+                <div class="comment-text">
+                  The change of manuals comes as relief
+                </div>
+                <div class="comment-thumb-container">
+                  <span class="material-icons"> thumb_up </span>
+                  <span class="material-icons"> thumb_down </span>
+                  <span class="comment-reply">REPLY</span>
+                </div>
+                <div class="comment-likes"></div>
+              </div>
             </div>
             <div class="comment-container">
-              <p class="comment-person">Christian B</p>
-              <p class="comment-text">perfect, great performance!</p>
-              <div class="comment-likes"></div>
-            </div>
-            <div class="comment-container">
-              <p class="comment-person"></p>
-              <p class="comment-text"></p>
-              <div class="comment-likes"></div>
+              <div>
+                <img
+                  class="comment-img"
+                  src="https://yt3.ggpht.com/ytc/AKedOLTmgLcB8FtLX_bxiBAfED1E3n7-Shav9SgvpkzycBw=s48-c-k-c0x00ffffff-no-rj"
+                  alt=""
+                  srcset=""
+                />
+              </div>
+              <div class="comment-body">
+                <div>
+                  <span class="comment-person">Christian B</span>
+                  <span class="comment-age">9 months ago</span>
+                </div>
+                <div class="comment-text">
+                  &#11088;&#11088;&#11088;&#129505;&#128153;&#128154;&#128155;&#128151;perfect,
+                  great performance!
+                </div>
+                <div class="comment-thumb-container">
+                  <span class="material-icons"> thumb_up </span>
+                  <span>1</span>
+                  <span class="material-icons"> thumb_down </span>
+                  <span class="comment-reply">REPLY</span>
+                </div>
+                <div class="comment-likes"></div>
+              </div>
             </div>
           </div>
         </section>
       </div>
       <div id="recommendation">
+        <nav id="recommendation-menu">
+          <div class="rec-menu-item">All</div>
+          <div class="rec-menu-item">Organs</div>
+          <div class="rec-menu-item">Keyboards</div>
+          <div class="rec-menu-item">Related</div>
+        </nav>
         <a
           href="https://www.youtube.com/watch?v=N0BoLA8SDYo"
           class="recommendation-container"
@@ -157,7 +216,8 @@
               J.S. Bach - Passacaglia und Fuge in C minor, BWV 582..
             </p>
             <p class="rec-video-uploader">
-              Hedon Zwolle<br />14K views 4 years ago
+              Hedon Zwolle<br />14K views <span class="middot">&middot;</span> 4
+              years ago
             </p>
           </div>
         </a>
@@ -174,7 +234,8 @@
               Sietze de Vries Improvisatie Ps 33 Martinikerk Groningen
             </p>
             <p class="rec-video-uploader">
-              henk van den brink<br />4.9K views 2 years ago
+              henk van den brink<br />4.9K views
+              <span class="middot">&middot;</span> 2 years ago
             </p>
           </div>
         </a>
@@ -189,7 +250,8 @@
           <div>
             <p class="rec-video-title">The Pianist - Full OST soundtrack</p>
             <p class="rec-video-uploader">
-              ROMANTIC HINDI<br />199K views 3 years ago
+              ROMANTIC HINDI<br />199K views
+              <span class="middot">&middot;</span> 3 years ago
             </p>
           </div>
         </a>
